@@ -1,0 +1,98 @@
+[
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/6.jpg",
+        "price":50.20,
+        "isNew":true,
+        "sale":false,
+        "stars":3
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/1.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":true,
+        "stars":3.5
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/2.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":false,
+        "stars":3
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/3.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":true,
+        "stars":2
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/4.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":false,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/5.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":true,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/6.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":false,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/7.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":true,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/8.jpg",
+        "price":56.20,
+        "isNew":true,
+        "sale":false,
+        "stars":3
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/9.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":false,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/10.jpg",
+        "price":56.20,
+        "isNew":false,
+        "sale":false,
+        "stars":4
+    },
+    {
+        "name":"Dummy Product Name",
+        "image":"https://template.hasthemes.com/hurst-v1/hurst/img/product/11.jpg",
+        "price":56.20,
+        "isNew":true,
+        "sale":false,
+        "stars":2
+    }
+]

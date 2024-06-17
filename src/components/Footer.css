@@ -1,0 +1,150 @@
+footer {
+  background: #eee;
+  padding: 5rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 0 40px;
+}
+footer .footer-container .contact {
+  display: flex;
+  flex-direction: column;
+}
+footer .footer-container .contact h1 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+footer .footer-container .contact h1::before {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+  background: #c87065;
+}
+footer .footer-container .contact ul {
+  list-style: none;
+}
+footer .footer-container .contact ul li {
+  padding-bottom: 15px;
+}
+footer .footer-container .contact ul li span {
+  float: left;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  width: 95px;
+}
+footer .footer-container .account h1,
+footer .footer-container .shipping h1 {
+  font-size: 20px;
+  position: relative;
+  font-weight: 900;
+  line-height: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+}
+footer .footer-container .account h1::before,
+footer .footer-container .shipping h1::before {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+  background: #c87065;
+}
+footer .footer-container .account ul,
+footer .footer-container .shipping ul {
+  list-style: none;
+}
+footer .footer-container .account ul li a,
+footer .footer-container .shipping ul li a {
+  color: #666;
+  line-height: 27px;
+  text-decoration: none;
+}
+footer .footer-container .account ul li a i,
+footer .footer-container .shipping ul li a i {
+  margin-right: 10px;
+}
+footer .footer-container .account ul li a:hover,
+footer .footer-container .shipping ul li a:hover {
+  color: #c87065;
+}
+footer .footer-container .letter h1 {
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 15px;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  text-transform: uppercase;
+  position: relative;
+}
+footer .footer-container .letter h1::before {
+  bottom: 0;
+  content: "";
+  height: 2px;
+  left: 0;
+  position: absolute;
+  width: 50px;
+  background: #c87065;
+}
+footer .footer-container .letter input {
+  background: #f6f6f6 none repeat scroll 0 0;
+  border: medium none;
+  box-shadow: none;
+  color: #999;
+  height: 40px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+  transition: all 0.5s ease 0s;
+  width: 100%;
+  outline: none;
+}
+footer .footer-container .letter button {
+  background: #f7f7f7 none repeat scroll 0 0;
+  color: #666;
+  font-weight: 700;
+  height: 35px;
+  line-height: 35px;
+  border: none;
+  padding: 0 25px;
+  text-transform: uppercase;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #c8a165;
+  transition: ease-out 0.4s;
+}
+footer .footer-container .letter button:hover {
+  box-shadow: inset 400px 0 0 0 #c8a165;
+  transition: all 0.3s ease 0s;
+  color: white;
+}
+
+@media only screen and (max-width: 946px) {
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 708px) {
+  footer .footer-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}/*# sourceMappingURL=Footer.css.map */
