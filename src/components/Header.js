@@ -188,6 +188,7 @@ function Header() {
                 </div>
                 <div className='right-side'>
                     <i className="fa-solid fa-cart-shopping"> </i>
+                    <span className='count'>3</span>
                     <div className='dropdown-menu'>
                         <div className='items-count'>
                             <p>You have <span style={{ color: '#c87065' }}>03 items</span> in your shopping bag</p>

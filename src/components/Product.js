@@ -52,157 +52,152 @@ function Product() {
                 <div className='product-option'>
                     <div className='option-button'>
                         <button onClick={toggleCategories}>Categories</button>
-                        {isCategoriesOpen && (
-                            <div className='dropdown-list'>
-                                <div className='container'>
-                                    <div className='title'>
-                                        <h1>Categories</h1>
-                                    </div>
-                                    <div className='categories-box'>
-                                        <ul>
-                                            <li><span>Chair</span>
-                                                <ul>
-                                                    <li>T-Shirts</li>
-                                                    <li>Striped Shirts</li>
-                                                    <li>Half Shirts</li>
-                                                    <li>Formal Shirts</li>
-                                                    <li>Bilazers</li>
-                                                </ul>
-                                            </li>
-                                            <li><span>Furniture</span>
-                                                <ul>
-                                                    <li>Men Bag</li>
-                                                    <li>Shoes</li>
-                                                    <li>Watch</li>
-                                                    <li>T-Shirt</li>
-                                                    <li>Shirt</li>
-                                                </ul>
-                                            </li>
-                                            <li><span>Accessories</span>
-                                                <ul>
-                                                    <li>T-Shirts</li>
-                                                    <li>Striped Shirts</li>
-                                                    <li>Half Shirts</li>
-                                                    <li>Formal Shirts</li>
-                                                    <li>Bilazers</li>
-                                                </ul>
-                                            </li>
-                                            <li><span>Top Brands</span>
-                                                <ul>
-                                                    <li>T-Shirts</li>
-                                                    <li>Striped Shirts</li>
-                                                    <li>Half Shirts</li>
-                                                    <li>Formal Shirts</li>
-                                                    <li>Bilazers</li>
-                                                </ul>
-                                            </li>
-                                            <li><span>Jewelry</span>
-                                                <ul>
-                                                    <li>T-Shirts</li>
-                                                    <li>Striped Shirts</li>
-                                                    <li>Half Shirts</li>
-                                                    <li>Formal Shirts</li>
-                                                    <li>Bilazers</li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </div>
+
+                        <div className='dropdown-list' style={{ height: isCategoriesOpen ? '358px' : '0px' }} >
+                            <div className='container'>
+                                <div className='title'>
+                                    <h1>Categories</h1>
+                                </div>
+                                <div className='categories-box'>
+                                    <ul>
+                                        <li><span>Chair</span>
+                                            <ul>
+                                                <li>T-Shirts</li>
+                                                <li>Striped Shirts</li>
+                                                <li>Half Shirts</li>
+                                                <li>Formal Shirts</li>
+                                                <li>Bilazers</li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Furniture</span>
+                                            <ul>
+                                                <li>Men Bag</li>
+                                                <li>Shoes</li>
+                                                <li>Watch</li>
+                                                <li>T-Shirt</li>
+                                                <li>Shirt</li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Accessories</span>
+                                            <ul>
+                                                <li>T-Shirts</li>
+                                                <li>Striped Shirts</li>
+                                                <li>Half Shirts</li>
+                                                <li>Formal Shirts</li>
+                                                <li>Bilazers</li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Top Brands</span>
+                                            <ul>
+                                                <li>T-Shirts</li>
+                                                <li>Striped Shirts</li>
+                                                <li>Half Shirts</li>
+                                                <li>Formal Shirts</li>
+                                                <li>Bilazers</li>
+                                            </ul>
+                                        </li>
+                                        <li><span>Jewelry</span>
+                                            <ul>
+                                                <li>T-Shirts</li>
+                                                <li>Striped Shirts</li>
+                                                <li>Half Shirts</li>
+                                                <li>Formal Shirts</li>
+                                                <li>Bilazers</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
-                        )}
-                    </div>
-                    <div className='option-button'>
-                        <button onClick={togglePrice}>Price</button>
-                        {isPriceOpen && (
-                            <div className='dropdown-list'>
-                                <div className='container'>
-                                    <div className='title'>
-                                        <h1>Price</h1>
-                                    </div>
-                                    <div className='price-box'>
-                                        <p>You range : <span>${values[0]} - ${values[1]}</span>
-                                        </p>
-                                        <Slider
-                                            onChange={setvalues}
-                                            classNAme={'slider'}
-                                            value={values}
-                                            min={min}
-                                            max={max} />
-                                    </div>
-                                </div>
-                            </div>
-                        )}
+                        </div>
 
                     </div>
                     <div className='option-button'>
-                        <button onClick={toggleColor}>Color</button>
-                        {isColorOpen && (
-                            <div className='dropdown-list'>
-                                <div className='container'>
-                                    <div className='title'>
-                                        <h1>Color</h1>
-                                    </div>
-                                    <div className='color-box'>
-                                        <ul>
-                                            <li>
-                                                <span className='color color-1'></span>
-                                                LightSalmon
-                                                <span className='count'>12</span>
-                                            </li>
-                                            <li>
-                                                <span className='color color-2'></span>
-                                                Dark Salmon
-                                                <span className='count'>20</span>
-                                            </li>
-                                            <li><span className='color color-3'></span>
-                                                Tomato
-                                                <span className='count'>59</span></li>
-                                            <li>
-                                                <span className='color color-4'></span>
-                                                Deep Sky Blue
-                                                <span className='count'>45</span>
-                                            </li>
-                                            <li>
-                                                <span className='color color-5'></span>
-                                                Electric Purple
-                                                <span className='count'>78</span>
-                                            </li>
-                                            <li>
-                                                <span className='color color-6'></span>
-                                                Deep Lilac
-                                                <span className='count'>10</span>
-                                            </li>
-                                            <li>
-                                                <span className='color color-7'></span>
-                                                Atlantis
-                                                <span className='count'>15</span>
-                                            </li>
-                                        </ul>
-                                    </div>
+                        <button onClick={togglePrice}>Price</button>
+                        <div className='dropdown-list' style={{ height: isPriceOpen ? '138px' : '0px' }} >
+                            <div className='container'>
+                                <div className='title'>
+                                    <h1>Price</h1>
+                                </div>
+                                <div className='price-box'>
+                                    <p>You range : <span>${values[0]} - ${values[1]}</span>
+                                    </p>
+                                    <Slider
+                                        onChange={setvalues}
+                                        classNAme={'slider'}
+                                        value={values}
+                                        min={min}
+                                        max={max} />
                                 </div>
                             </div>
-                        )}
+                        </div>
+                    </div>
+                    <div className='option-button'>
+                        <button onClick={toggleColor}>Color</button>
+                        <div className='dropdown-list' style={{ height: isColorOpen ? '280px' : '0px' }} >
+                            <div className='container'>
+                                <div className='title'>
+                                    <h1>Color</h1>
+                                </div>
+                                <div className='color-box'>
+                                    <ul>
+                                        <li>
+                                            <span className='color color-1'></span>
+                                            LightSalmon
+                                            <span className='count'>12</span>
+                                        </li>
+                                        <li>
+                                            <span className='color color-2'></span>
+                                            Dark Salmon
+                                            <span className='count'>20</span>
+                                        </li>
+                                        <li><span className='color color-3'></span>
+                                            Tomato
+                                            <span className='count'>59</span></li>
+                                        <li>
+                                            <span className='color color-4'></span>
+                                            Deep Sky Blue
+                                            <span className='count'>45</span>
+                                        </li>
+                                        <li>
+                                            <span className='color color-5'></span>
+                                            Electric Purple
+                                            <span className='count'>78</span>
+                                        </li>
+                                        <li>
+                                            <span className='color color-6'></span>
+                                            Deep Lilac
+                                            <span className='count'>10</span>
+                                        </li>
+                                        <li>
+                                            <span className='color color-7'></span>
+                                            Atlantis
+                                            <span className='count'>15</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div className='option-button'>
                         <button onClick={toggleSize}>Size</button>
-                        {isSizeOpen && (
-                            <div className='dropdown-list'>
-                                <div className='container'>
-                                    <div className='title'>
-                                        <h1>Size</h1>
-                                    </div>
-                                    <div className='size-box'>
-                                        <ul>
-                                            <li>S</li>
-                                            <li>M</li>
-                                            <li>L</li>
-                                            <li>SL</li>
-                                            <li>XL</li>
-                                        </ul>
-                                    </div>
+
+                        <div className='dropdown-list' style={{ height: isSizeOpen ? '138px' : '0px' }} >
+                            <div className='container'>
+                                <div className='title'>
+                                    <h1>Size</h1>
+                                </div>
+                                <div className='size-box'>
+                                    <ul>
+                                        <li>S</li>
+                                        <li>M</li>
+                                        <li>L</li>
+                                        <li>SL</li>
+                                        <li>XL</li>
+                                    </ul>
                                 </div>
                             </div>
-                        )}
+                        </div>
+
                     </div>
 
                 </div>

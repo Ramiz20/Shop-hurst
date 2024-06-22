@@ -6,7 +6,7 @@ function Footer() {
     <>
       <footer>
        <div className='footer-container'>
-       <div className='contact'>
+       <div className='single-footer'>
           <h1>Contact us</h1>
           <ul>
             <li><span>Adress:</span>
@@ -15,7 +15,7 @@ function Footer() {
             <li><span>Email :</span>your-email@gmail.com</li>
           </ul>
         </div>
-        <div className='account'>
+        <div className='single-footer'>
         <h1>Account</h1>
           <ul>
             <li><a href='#'><i className="fa-regular fa-circle-dot"></i>My Account</a></li>
@@ -26,9 +26,7 @@ function Footer() {
       
             </ul>
         </div>
-        
-       
-        <div className='shipping'>
+        <div className='single-footer'>
         <h1>SHIPPING</h1>
           <ul>
             <li><a href='#'><i className="fa-regular fa-circle-dot"></i>New Products</a></li>
@@ -39,7 +37,9 @@ function Footer() {
       
             </ul>
         </div>
-        <div className='letter'>
+
+        
+        <div className='single-footer'>
         <h1>EMAIL NEWSLETTERS</h1>
         <input type='email' placeholder='Email Address...'></input>
         <button>Subscribe</button>

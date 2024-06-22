@@ -35,7 +35,9 @@
 
     .hidden-menu {
         width: 100%;
-        transition: all 1s ease-out;
+        transition: all 0.7s cubic-bezier(0.4, 0, 1, 1);
+        overflow: hidden;
+       
 
         .nav-menu {
             float: left;
@@ -77,16 +79,17 @@
                     .fa-plus,
                     .fa-minus {
                         position: relative;
-                        top: 9px;
-                        font-size: 18px;
+                        top: 13px;
+                        font-size: 12px;
                         font-weight: 700;
-                       
+
                         float: right;
                         right: 40px;
                     }
 
                     .row {
-                        transition: all 1s ease-in-out;
+                        transition: all 0.7s cubic-bezier(0.4, 0, 1, 1);
+
                         ul {
                             padding: 0;
                             margin: 0;
@@ -127,7 +130,7 @@ main {
     position: relative;
     background: rgba(0, 0, 0, 0) url(https://template.hasthemes.com/hurst-v1/hurst/img/bg/1.jpg) no-repeat scroll center center / cover;
     width: 100%;
-    height: 40vh;
+    height: 303px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -138,7 +141,7 @@ main {
         flex-direction: column;
         align-items: center;
         position: relative;
-        width: 100%;
+        width: 50%;
 
         .main-center {
 
@@ -160,6 +163,8 @@ main {
             margin-left: 0;
             width: 100%;
             padding-left: 20px;
+            left: -200px;
+            top: 25px;
 
             ul {
                 display: flex;
@@ -177,6 +182,7 @@ main {
                     text-transform: uppercase;
 
                     span {
+                        color: white;
                         &:hover {
                             color: #c8a165;
                             transition: all .3s ease 0s;
@@ -201,8 +207,59 @@ main {
 }
 
 
-@media only screen and (max-width: 767px) {
+@media only screen and (min-width: 475px) and (max-width: 767px) {
     .mobile-menu {
         display: flex;
     }
+
+    main {
+        height: 147px;
+
+        .container {
+            width: 50%;
+            .main-center {
+                h1 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding: 42px 0 38px;
+                    height: 40px;
+                }
+            }
+            .main-end{
+                left: -100px;
+                top: 0;
+                padding-left: 0;
+            }
+        }
+    }
 }
+
+@media only screen and (max-width: 474px) {
+    .mobile-menu {
+        display: flex;
+    }
+
+    main {
+        height: 147px;
+
+        .container {
+            width: 50%;
+            .main-center {
+                h1 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    padding: 42px 0 38px;
+                    height: 40px;
+                }
+            }
+            .main-end{
+                left: -130px;
+                top: 0;
+            }
+        }
+    }
+}
+
+
+
+

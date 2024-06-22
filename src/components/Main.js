@@ -8,8 +8,13 @@ function Main() {
     const [openPages, setOpenPages] = useState(false);
 
     const handleClick = () => setOpenMenu(!openMenu);
-    const showRow = () => setOpenRow(!openRow);
-    const showPages = () => setOpenPages(!openPages);
+
+    const showRow = () => {
+        setOpenRow(!openRow);
+    }
+    const showPages = () => {
+        setOpenPages(!openPages);
+    }
     return (
         <>
             <section className='mobile-menu'>
@@ -17,14 +22,14 @@ function Main() {
                     <span>MENU</span>
                     <i className={openMenu ? 'fa-solid fa-x' : 'fa-solid fa-bars'} onClick={handleClick} ></i>
                 </div>
-                <div className='hidden-menu' style={{ height: openMenu ? '100%' : '0' }}>
-                    {openMenu && (
+                <div className='hidden-menu' style={{ maxHeight: openMenu ? '861px' : 0 }}>
+                    {(
                         <nav className='nav-menu'>
-                            <ul >
+                            <ul>
                                 <li><a href='index.html'>Home</a>
                                     <i onClick={showRow} className={openRow ? 'fa-solid fa-minus' : 'fa-solid fa-plus'}></i>
                                     {openRow && (
-                                        <div className='row' style={{ height: openRow ? '0' : '100%' }}>
+                                        <div className='row' style={{ height: openPages ? '0' : '82px' }} >
 
                                             <ul>
                                                 <li><a href='#'>HOME VERSION 1</a></li>
@@ -33,18 +38,15 @@ function Main() {
                                         </div>
                                     )}
                                 </li>
-                                <li><a href='index.html'>Products</a>
-
-                                </li>
-
-
+                              
+                                <li><a href='index.html'>Products</a></li>
                                 <li><a href='index.html'>Accesories</a> </li>
                                 <li><a href='index.html'>Lookbook</a></li>
                                 <li><a href='index.html'>Blog</a></li>
                                 <li><a href='index.html'>Pages</a>
                                     <i onClick={showPages} className={openPages ? 'fa-solid fa-minus' : 'fa-solid fa-plus'}></i>
                                     {openPages && (
-                                        <div className='row' style={{ height: openPages ? '0' : '100%' }}>
+                                        <div className='row' style={{ height: openPages ? '0' : '779px' }}>
 
                                             <ul>
                                                 <li><a href='index.html'>SHOP</a> </li>
