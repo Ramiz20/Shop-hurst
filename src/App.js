@@ -8,12 +8,10 @@ import Product from './components/Product';
 function App() {
   return (
     <>
-    
     <Header/>
     <Main/>
     <Product/>
     <Footer/>
-       
 </>
   );
 }
