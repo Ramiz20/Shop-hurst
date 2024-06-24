@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Ramiz20/Shop-hurst.git/static/css/main.c55ac48b.css",
+    "main.js": "/Ramiz20/Shop-hurst.git/static/js/main.1ca120a3.js",
+    "static/js/453.3c83dd36.chunk.js": "/Ramiz20/Shop-hurst.git/static/js/453.3c83dd36.chunk.js",
+    "index.html": "/Ramiz20/Shop-hurst.git/index.html",
+    "main.c55ac48b.css.map": "/Ramiz20/Shop-hurst.git/static/css/main.c55ac48b.css.map",
+    "main.1ca120a3.js.map": "/Ramiz20/Shop-hurst.git/static/js/main.1ca120a3.js.map",
+    "453.3c83dd36.chunk.js.map": "/Ramiz20/Shop-hurst.git/static/js/453.3c83dd36.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c55ac48b.css",
+    "static/js/main.1ca120a3.js"
+  ]
+}
