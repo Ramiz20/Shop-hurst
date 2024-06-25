@@ -41,7 +41,7 @@ function Footer() {
         
         <div className='single-footer'>
         <h1>EMAIL NEWSLETTERS</h1>
-        <input type='email' placeholder='Email Address...'></input>
+        <input type='email' placeholder='Email Address...'/>
         <button>Subscribe</button>
         </div>
        </div>
